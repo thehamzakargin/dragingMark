@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; UTF-8">
+<title>draging mark</title>
+</head>
+<body>
+
+
+<span id="visitingPlace" style="color:white; background-color:blue;">SUPER HAMZA</span>
+<script type="text/javascript" language="javascript">
+    var place          = document.getElementById("visitingPlace");
+    place.style.position  = "absolute";
+    window.onmousemove = function(event){
+        place.style.left = event.clientX + 15 + "px";
+        place.style.top = event.clientY + "px";
+    }
+
+</script>
+</body>
+</html>
